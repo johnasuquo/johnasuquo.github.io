@@ -154,8 +154,13 @@
         </section>
 
         <footer>
-            <p>&copy; 2024 John Asuquo. Built with dedication and determination.</p>
+            <p>&copy; <span id='date'></span>&nbsp;John Asuquo. Built with dedication and determination.</p>
         </footer>
     </div>
+ <script>
+    const date = new Date()
+    const year = date.getFullYear()
+    document.getElementById('date').innerHTML = year;
+ </script>   
 </body>
 </html>
